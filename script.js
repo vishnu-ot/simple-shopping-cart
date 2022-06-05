@@ -22,16 +22,16 @@ function populateData(data) {
       return `
         <div class="productItem">
                 <div class="productPic">
-                  <img src="/assets/prod003.png" alt="">
+                  <img src="/assets/${itm.image}" alt="">
                 </div>
                 <div class="productTitle">
-                     <h2>Hilary Perkins</h2>
+                     <h2>${itm.title}</h2>
                 </div>
                 <div class="productMeta">
                   <div class="productInfo">               
-                    <h4>$67</h4>
+                    <h4>${itm.price}</h4>
                   </div>
-                  <div class="addToCart" data-id="62873f85bab68bee4e164c4b">
+                  <div class="addToCart" data-id=${itm.id}>
                     <img src="/assets/add.svg" alt="">
                   </div>
                 </div>
@@ -41,6 +41,17 @@ function populateData(data) {
     .join("");
   productList.innerHTML = listHtml;
 }
+
+// Add to cart funtion
+
+
+
+
+
+
+
+
+
 
 // showing cart
 
